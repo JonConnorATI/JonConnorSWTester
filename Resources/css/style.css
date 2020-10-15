@@ -1,56 +1,273 @@
-body {
-    background-color: #000000;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* NavBar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 550px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+ 
     
+    
+    /* Banner Section Desktop */
 
-}
+    .banner {
+      background-color: #E3E2E2;
+    }
 
-/* HEADINGS */
-.header--main {
-    font-weight: normal;
-    font-size: 50px;
-    color: #ffffff;
+    .banner-pic {
+      padding: 1rem;
+    }
 
-}
+    .banner-text  {
+      margin-top: 5rem;
+    }
 
-.header--secondary {
-    font-weight: 300;
-    font-size: 42px;
-    color: #ffffff;
-}
+    .banner-text-p1 {
+      font-size: 1.1rem;
+      padding-bottom: 1rem;
+    }
 
-.header--sub-header {
-    font-weight: normal;
-    font-size: 21px;
-    color: grey;
-}
-/* LINKS */
-.link--cta {
-    font-size: 16px;
-    color: aquamarine;
-}
+    .banner-text-h3 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
 
-/* FOOTER */
-.footer--copyright {
-    font-size: 21px;
-    color: grey;
-    text-align: right;
+    .img-main {
+      margin-bottom: 2rem;
+    }
 
-}
+    .main-article {
+      color: black;
+    }
 
-/*Images*/
+    .main-article:hover {
+      font-weight: bold;
+      text-decoration: none;
+      color: chocolate;
+    }
 
-.stub {
-display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
 
-p.stub {
-    font-size: 10px;
-}
+    /* Banner Media Rules */
+    @media only screen and (max-width: 480px) {
+      .banner-text  {
+        margin-top: 2rem;
+      }
+      .button {
+        padding-bottom: 1rem;
+      }
+      .banner-text  {
+        text-align: center;
+      }
+      .main-heading {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
 
-/*CONTAINER*/
+    /* Practice */
+    .practice {
+      margin: 3rem auto;
+    }
 
+    .cards {
+      text-shadow: .75px .75px black;
+      margin: .5rem auto;
+      color: #FBFBED;
+    }
+    
+    .cards a {
+      color: #FBFBED;
+    }
+
+    .cards a:hover {
+      font-weight: bold;
+      text-decoration-line: none;
+      color: chocolate;
+    }
+    
+    /* Learning Desktop */
+
+    .learn  {
+      background-color: #E3E2E2;
+    }
+
+    .learn-card {
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+      box-shadow: .3px .3px gray;
+    }
+
+    .learn h1 {
+      padding-top: 1rem;
+    }
+
+    .learn h4 {
+      padding-left: .75rem;
+    }
+
+    .learn p  {
+      padding-left: .75rem;
+      padding-bottom: .75rem;
+    }
+
+    .courses  {
+      color: chocolate;
+    }
+
+    .courses:hover  {
+      text-decoration: none;
+      color: lightseagreen;
+      font-weight: bold;
+    }
+
+    /* Media Rules Learning Section */
+
+    @media only screen and (min-width: 480px) {
+      .ellipse  {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .show {
+        display: none;
+      }
+      .ellipse  {
+        display: inline;
+      }
+    }
+    /* Thesis Desktop */
+    
+    .desktop .thesis-container{
+      width: 100%;
+      display: flex;
+    }
+    
+    .desktop .thesis-header h1{
+      padding-top: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    
+    }
+    
+    .desktop .thesis{
+      width: 60%;
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    
+    .desktop .exhibit{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 1.5rem;
+    }
+    
+    .desktop .exhibit img{
+      padding: .5rem;
+      height: 100%;
+      width: 35%;
+    }
+    .desktop .exhibit .exhibitbox:first-child{
+      background-color: hsla(213, 26%, 83%, 0.56);
+    }
+    
+    .desktop .exhibitbox{
+      display: flex;
+    }
+    
+    .desktop .exhibit-words h4{
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .desktop .urban{
+      margin-top: 1.5rem;
+    }
+    
+    .desktop .urban h4{
+      margin-bottom: .5rem;
+    }
+    
+    /* Thesis Mobile */
+    
+    .mobile .thesis h1{
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    
+    /* Footer Desktop */
+    
+    .desktop .footer{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 3rem;
+      padding-top: 1rem;
+      border-top: .5px solid hsl(0, 1%, 79%);
+    }
+    
+    .desktop .copyright{
+      margin-left: 1.5rem;
+      font-size: .75rem;
+    }
+    
+    .desktop .footer .terms{
+      display: inline-flex;
+      font-size: .75rem;
+    }
+    
+    .desktop .footer .terms h5{
+      margin-right: .5rem;
+    }
+    
+    .desktop .terms a:hover{
+     color: hsl(213, 32%, 67%);
+     font-weight: bold;
+    }
+    
+    .desktop .terms a:active{
+     color: hsl(204, 75%, 57%);
+    }
+    
+    
+    
+    /* Footer Mobile */
+    
+    .mobile .footer{
+      font-size: .75rem;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+    }
