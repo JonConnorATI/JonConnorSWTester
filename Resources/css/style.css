@@ -19,19 +19,19 @@ body {
 .navleft a {
   float: left;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .navright a {
   float: right;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /* Navbar links on mouse-over */
@@ -42,14 +42,14 @@ body {
 
 
 #list-last {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
  
 
 
 .main {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 
