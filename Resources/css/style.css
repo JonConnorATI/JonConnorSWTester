@@ -15,37 +15,32 @@ body {
   
 }
 
-/* Navbar links */
-.navleft a {
-  float: left;
-  text-align: center;
-  padding: 1.5rem;
-  color: white;
+/* navbar items */
+.navbar a {
   text-decoration: none;
   font-size: 1rem;
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+ 
 }
 
+/* Navbar left */
+.navleft a {
+  float: left;
+  
+}
+
+/* Navbar right */
 .navright a {
   float: right;
-  text-align: center;
-  padding: 1.5rem;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
+ 
 }
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color: #000;
+  background-color: rgb(14, 131, 167);
 }
-
-
-
-#list-last {
-  padding-right: 1.5rem;
-}
-
- 
 
 
 .main {
