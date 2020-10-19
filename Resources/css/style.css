@@ -64,13 +64,13 @@ h1 {
 }
 
 /* Navbar left */
-.navleft a {
+.navleft a, p {
   float: left;
   
 }
 
 /* Navbar right */
-.navright a {
+.navright a, p {
   float: right;
  
 }
