@@ -54,23 +54,14 @@ h1 {
  
 }
 
-.navbar p {
-  
-  font-size: 1rem;
-  padding: 0;
-  margin: 0;
-  
- 
-}
-
 /* Navbar left */
-.navleft a, p {
+.navleft a {
   float: left;
   
 }
 
 /* Navbar right */
-.navright a, p {
+.navright a {
   float: right;
  
 }
