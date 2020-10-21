@@ -20,7 +20,7 @@ p {
 }
 
 #about-me {
-  color: cornsilk;
+  color: white;
 }
 
 
@@ -73,12 +73,28 @@ h1 {
 
 
 .main {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 
 
+.container-intro {
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+.container--a{
+  
+  flex-direction: column;
+  display: flex;
+  max-width: 80%;
+  align-items: center;
+
+}
 
 
 .container-aboutMe {
@@ -97,7 +113,7 @@ h1 {
 
 
 .container {
-  height: 150px;
+  /* height: 150px; */
   background-color: #27afea;
   display: flex;
   justify-content: center;
