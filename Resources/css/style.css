@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+
 }
 
 /* Fonts */
@@ -86,7 +87,7 @@ h1 {
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
-  color:whitesmoke;
+  color:cornsilk;
   background-color: #27afea;
   padding: 2rem;
   
