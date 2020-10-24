@@ -72,6 +72,21 @@ h1 {
   background-color: rgb(14, 131, 167);
 }
 
+/*Nav bar link text*/
+.navbar p {
+  float: right;
+  margin: 0 0.5rem;
+
+}
+
+/*Nav bar link text not displayed on devices*/
+@media only screen and (max-width: 520px) {
+  .mobile {
+    display: none;
+  }
+}
+
+
 
 .main {
   margin-top: 4rem;
