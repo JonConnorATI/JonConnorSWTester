@@ -21,13 +21,13 @@ p {
 }
 
 #about-me {
-  color: white;
+  color:cornsilk;;
 }
 
 
 
 h1 {
-  margin: 2rem;
+  margin-top: 2rem;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -50,7 +50,7 @@ h1 {
   text-decoration: none;
   font-size: 1rem;
   padding: 1.5rem 0.5rem;
-  color: white;
+  color:cornsilk;
   text-align: center;
  
 }
@@ -129,41 +129,53 @@ h1 {
 
 
 .container {
-  /* height: 150px; */
+  min-height: 15rem; 
   background-color: #27afea;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  color:cornsilk;
+  
+  
 
 }
+
 
 .left,
 .center,
 .right {
-  min-height: 75px;
-  width: 400px;
-  background-color: DodgerBlue;
-  border: 0.1rem solid lightgrey;
+  min-height: 75%;
+  flex-direction: column;
+  display: flex;
+  padding: 1rem;
+  background-color: #595959;
+  margin: 1rem;
+  min-width: 20%;
+  align-items: center;
+   
 }
 
-#baseline .center {
-  height: 100px;
-  width: 100px;
-  border: 5px solid turquoise;
+
+/*left-right-center containers display in block when on devices*/ 
+
+@media only screen and (max-width: 520px) {
+  .container {
+    display: block;
+    min-width:75%;
+  }
 }
 
-#flexstart {
-align-items: flex-start;
+/*container images*/
+.container img {
+  max-width: 100%;
+  height: auto;
 }
 
-#flexend {
-align-items: flex-end;
+
+
+/*Footer*/
+footer {
+  text-align: left;
+  margin: 1rem;
 }
 
-#center {
-align-items: center;
-}
-
-#baseline {
-align-items: baseline;
-}
