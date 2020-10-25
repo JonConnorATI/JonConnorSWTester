@@ -46,7 +46,7 @@ h1 {
 }
 
 /* navbar items */
-.navbar a {
+.navbar a, #transcript {
   text-decoration: none;
   font-size: 1rem;
   padding: 1.5rem 0.5rem;
@@ -109,7 +109,12 @@ h1 {
   display: flex;
   max-width: 80%;
   align-items: center;
+  
 
+}
+
+#ost--one {
+  text-align: left;
 }
 
 
@@ -121,12 +126,13 @@ h1 {
   color:cornsilk;
   background-color: #27afea;
   padding: 2rem;
-  
   }
 
-
-
-
+  .vid--ost, #transcript  {
+    margin:0;
+    padding:0;
+    
+  }
 
 .container {
   min-height: 15rem; 
