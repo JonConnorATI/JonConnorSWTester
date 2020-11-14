@@ -154,7 +154,7 @@ h1 {
   flex-direction: column;
   display: flex;
   padding: 1rem;
-  background-color: #595959;
+  /*background-color: #595959;*/
   margin: 1rem;
   min-width: 20%;
   align-items: center;
