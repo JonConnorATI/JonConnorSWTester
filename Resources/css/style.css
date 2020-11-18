@@ -156,6 +156,14 @@ h1 {
 
 }
 
+#title {
+  margin: 0;
+  padding-top: 1.5rem;
+  background-color: #27afea;
+  text-align: center;
+  color: cornsilk;
+}
+
 
 .left,
 .center,
