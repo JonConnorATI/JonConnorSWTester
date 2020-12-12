@@ -1,0 +1,19 @@
+Git tips 3
+
+Need to pull latest version of main to update "remote" main.
+
+From the cold branch PC
+
+git checkout main
+
+git pull
+
+git merge (branch_name)
+
+git push
+
+git checkout (branch_name)
+
+git merge main
+
+git push origin (branch_name)
