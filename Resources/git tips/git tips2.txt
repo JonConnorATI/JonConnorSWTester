@@ -1,0 +1,96 @@
+After pushing I've been seeing this message at remote repository:
+
+1 commit behind master.
+
+This merge has conflicts that must be resolved before it can be committed.
+
+To manually merge these changes into TA20footerLast run the following commands:
+
+git checkout 7c891f50c557
+
+Note: This will create a detached head!
+
+git merge remotes/origin/master
+
+git
+github
+bitbucket
+branching-and-merging
+git-merge-conflict
+share  improve this question  follow 
+edited Jun 20 at 9:12
+
+Community♦
+111 silver badge
+asked Dec 6 '15 at 14:20
+
+Roman Yavoriv
+48511 gold badge55 silver badges66 bronze badges
+If you want to see what that 1 new commit is on master, run git log -1 -p origin/master – Devin G Rhode Sep 10 at 20:23
+add a comment
+7 Answers
+
+56
+
+Before you begin, if you are uncomfortable with a command line, you can do all the following steps using SourceTree, GitExtension, GitHub Desktop, or your favorite tool.
+
+To solve the issue, you might have two scenarios:
+
+1) Fix only remote repository branch which is behind commit
+
+Example: Both branches are on the remote side
+
+ahead === Master branch
+
+behind === Develop branch
+
+Solution:
+
+Clone the repository to the local workspace: this will give you the Master branch which is ahead with commit
+
+git clone repositoryUrl
+Create a branch with Develop name and checkout to that branch locally
+
+git checkout -b DevelopBranchName // this command creates and checkout the branch
+Pull from the remote Develop branch. Conflict might occur. if so, fix the conflict and commit the changes.
+
+ git pull origin DevelopBranchName
+Merge the local Develop branch with the remote Develop branch
+
+  git merge origin develop
+Push the merged branch to the remote Develop branch
+
+  git push origin develop
+2) Local Master branch is behind the remote Master branch
+
+This means every locally created branch is behind.
+
+Before preceding, you have to commit or stash all the changes you made on the branch that is behind commits.
+
+Solution:
+
+Checkout your local Master branch
+
+git checkout master
+Pull from remote Master branch
+
+git pull origin master
+Now your local Master is in sync with the remote Branch but other local branches, that branched from the local Master branch, are not in sync with your local Master branch because of the above command. To fix that:
+
+Checkout the branch that is behind your local Master branch
+
+git checkout BranchNameBehindCommit
+Merge with the local Master branch
+
+git merge master  // Now your branch is in sync with local Master branch
+If this branch is on the remote repository, you have to push your changes
+
+    git push origin branchBehindCommit
+share  improve this answer  follow 
+edited Nov 11 at 4:52
+answered Mar 25 '17 at 10:08
+
+ash
+1,4941212 silver badges2929 bronze badges
+At 1) -> 3) gives an error: Automatic merge failed; fix conflicts and then commit the result. – skdhfgeq2134 Jul 6 at 9:19
+add a comment
