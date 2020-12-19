@@ -67,6 +67,10 @@ h1 {
  
 }
 
+#list-last {
+  float: right;
+}
+
 /* Navbar links on mouse-over */
 .navbar a:hover {
   background-color: rgb(14, 131, 167);
@@ -198,11 +202,18 @@ h1 {
 
 
 /*Footer*/
-footer {
+footer h3 {
   text-align: left;
   margin: 1rem;
+  color:cornsilk;
+  
 }
 
+footer {
+  background-color: #595959;
+  padding: 0.5rem;
+
+}
 /*BDD Page*/
 #bdd--title {
   padding-top: 2rem;
