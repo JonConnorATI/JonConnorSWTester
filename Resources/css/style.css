@@ -284,7 +284,7 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 75%;
 }
 
 @media only screen and (max-width: 520px) {
@@ -312,3 +312,56 @@ img {
 
 }
 
+/*Cucumber image page*/
+
+.imgCenterCucumber {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+@media only screen and (max-width: 520px) {
+  .imgCenterCucumber {
+    width: 100%;
+  }
+}
+
+
+/*cucumber code block */
+.codeblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  
+}
+
+
+.code {
+  flex-direction: column;
+  /* display: flex; */
+  width: 80%;
+  align-items:center;
+  /*justify-content: center;*/
+  text-align: left;
+  background-color: rgb(184, 179, 179);
+  font-size: 1.1rem;
+  padding: 0.35rem 0 0 0.35rem;
+}
+
+.feature span {
+  color: red;
+  font-weight: bold;
+}
+
+.given span {
+  color: red;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.given em {
+  color:blue;
+  font-style: normal;
+}
