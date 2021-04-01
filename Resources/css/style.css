@@ -372,5 +372,7 @@ img {
 
 .italic--red {
   color: red;
-  font-style: italic;
+  font-style: italic
+  ;
 }
+
