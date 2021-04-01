@@ -73,7 +73,7 @@ h1 {
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color: rgb(66, 172, 24);
+  background-color:#27afea;
 }
 
 /*Nav bar link text*/
@@ -141,8 +141,8 @@ h1 {
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
-  color:cornsilk;
-  background-color: #27afea;
+  color:black;
+  /*background-color: #27afea;*/
   padding: 2rem;
   margin: 0;
   max-height: 40rem;
@@ -156,12 +156,11 @@ h1 {
   }
 
 .container {
-  min-height: 15rem; 
-  background-color: #27afea;
   display: flex;
-  justify-content: space-evenly;
-  padding: 1rem;
-  color:cornsilk;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
   
   
 
@@ -185,7 +184,7 @@ h1 {
   padding: 1rem;
   /*background-color: #595959;*/
   margin: 1rem;
-  min-width: 20%;
+  
   align-items: center;
    
 }
@@ -249,7 +248,7 @@ h1 {
 }
 
 .left a:hover, .center a:hover, .right a:hover {
-  background-color: rgb(66, 172, 24);
+  background-color: #27afea;
 }
 
 
@@ -364,4 +363,14 @@ img {
 .given em {
   color:blue;
   font-style: normal;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.italic--red {
+  color: red;
+  font-style: italic;
 }

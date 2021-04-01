@@ -30,7 +30,9 @@
       <h1>The Interface between Tech and non-Tech</h1>
       <p class="ost--one">When we have the conversations we need to document our findings, so we can all understand, then discuss, then decide, then write a unit test and finally validate.</p>
       <img class="imgCenterCucumber" src="Resources/images/Cycle.png" alt="Cyclic process Diagram">
-      <p class="ost--one">Cucumber is the tool that supports Behaviour Driven Development (BDD) and Gherkin is it's language. Lets pretend we are discussing how a piece of software should behave when we enter scores for a student's exam results, and based on what the business user has told us we have come up with this test.</p>
+      <p class="ost--one">Cucumber is the tool that supports Behaviour Driven Development (BDD) and Gherkin is it's language. Lets pretend we are discussing how a piece of software should behave when we enter scores for a student's exam results, and based on what the business user has told us we have come up with this test.<br></p>
+      <p class="ost--one"><br>You can see the keyords, highlighted and in italics. <span class="red">Feature </span>is the behaviour of the sofware we are testing. <span class="red">Scenario </span> is the specific behaviour we want to test. <span class="italic--red">Given </span> is the state the software is in when we start the test, for example "logged in" or in this case, a score is entered. <span class="italic--red">When </span>describes an action to be carried out, in this case, press a button. <span class="italic--red">Then </span>describes what should now happen, in this case, display the grade.<br></p>
+      <p class="ost--one"><br>There are other keywords <span class="italic--red">And, But</span> & <span class="italic--red">Background, Examples </span>that assist in writing more concise steps and scenarios.</p>
       <!--<img class="imgCenter" src="Resources/images/FeatureFile.png" alt="Example cucumber file">-->
       <div class="codeblock">
         <div class="code">
@@ -60,7 +62,7 @@
         </div>
 
       </div>
-      <p class="ost--one">That's fine for a first draft, but after discussing further and understading we can write a test to cover all these scenarios using the 'examples' feature. Also, our test covers all the partitions and boundaries of the exam grade rules. The partions are 0 to 49, 50 to 64, 65 to 79 and 80 to 100. The boundaries are 50, 65 and 80. So we'll mention these values in the test.</p>
+      <p class="ost--one">That's fine for a first draft, but after discussing further and understading we can write a test to cover all these scenarios using the <span class="italic--red">Examples</span> feature. Also, our test covers all the partitions and boundaries of the exam grade rules. The partions are 0 to 49, 50 to 64, 65 to 79 and 80 to 100. The boundaries are 50, 65 and 80. So we'll mention these values in the test.</p>
       <img class="imgCenter" src="Resources/images/FeatureFile2.png" alt="Example cucumber file">
       <div class="codeblock">
         <div class="code">
