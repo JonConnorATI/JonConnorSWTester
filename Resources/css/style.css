@@ -161,6 +161,7 @@ h1 {
   align-items: center;
   margin: 0 auto;
   max-width: 80%;
+  background-color: blueviolet;
   
   
 
@@ -292,7 +293,7 @@ footer {
 
 @media only screen and (max-width: 520px) {
   .imgCenter {
-    width: 100%;
+    width: 90%;
   }
 }
 
