@@ -28,12 +28,64 @@
 <div class="main">
   <div class="container-intro">
     <div class="container--a">
-      <h1>This is a place holder</h1>
-      <p id="ost--one">Below is my take on Automation.</p>
-  
+      <h1>Scripting the tests for Automation</h1>
+      <p class="ost--one">In the previous section we ran the feature file - "Scores and Grades" to produce a report, that gives us a live record of our requirements and tests. We also get an output that prodcues the skeleton code that we can use for automation.</p>
+      <div class="codeblock">
+        <div class="code">
+          <p class="feature"><span>Package </span>cucumber.steps;</p><br>
+          <p class="feature"><span>import </span>cucumber.api.PendingException;</p>
+          <p class="feature"><span>import </span>cucumber.api.java.en.Given;</p>
+          <p class="feature"><span>import </span>cucumber.api.java.en.Then;</p>
+          <p class="feature"><span>import </span>cucumber.api.java.en.When;</p><br>
+          <p class="feature"><span class="red">Public class </span>GradeSteps {</p><br>
+            <p>&emsp;&emsp;<span class="grey">@Given</span>(<span class="lblue">"^(\\d+) is entered into the score section$"</span>)</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>is_entered_into_the_score_section(<span class="red">int </span><span class="lred">arg1</span>) <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
+            <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
+            <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
+          
+            <p>&emsp;&emsp;<span class="grey">@When</span>(<span class="lblue">"^the grade button is pressed$"</span>)</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>the_grade_button_is_pressed() <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
+            <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
+            <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
+          
+            <p>&emsp;&emsp;<span class="grey">@Then</span>(<span class="lblue">"^Fail should be displayed$"</span>)</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>fail_should_be_displayed() <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
+            <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
+            <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
+          
+            <p>&emsp;&emsp;<span class="grey">@Then</span>(<span class="lblue">"^Pass should be displayed$"</span>)</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>pass_should_be_displayed() <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
+            <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
+            <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
+
+            <p>&emsp;&emsp;<span class="grey">@Then</span>(<span class="lblue">"^Merit should be displayed$"</span>)</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>merit_should_be_displayed() <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
+            <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
+            <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
+
+            <p>&emsp;&emsp;<span class="grey">@Then</span>(<span class="lblue">"^Distinction should be displayed$"</span>)</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>distinction_should_be_displayed() <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
+            <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
+            <p>&emsp;&emsp;&emsp;&emsp;}</p>
+            <p>}</p>
+            
+
+
+
+          
+
+
+        </div>
     </div>
   </div>
-  
+  </div>
+
   
   <h2>Page under construction</h2>
   
