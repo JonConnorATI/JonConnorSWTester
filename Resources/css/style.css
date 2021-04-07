@@ -87,8 +87,13 @@ h1 {
 /*Hover for CUCUMBER REPORT*/
 #report {
   text-decoration: none;
-  color: black;
+  color: cornsilk;
+  font-size: 1rem;
   font-style: italic;
+  margin: 0.5rem;
+  background-color: darkred;
+  border-radius: 40%;
+  padding:0.5rem;
 }
 
 #report:hover {
