@@ -371,6 +371,7 @@ img {
   justify-content: center;
   align-items: center;
   margin: 10px 0 10px 0;
+  flex-wrap: wrap;
   
 }
 
@@ -432,6 +433,8 @@ img {
   ;
 }
 
+
+
 /*BDD GRAPHIC AND LINK */
 
 .item--container {
@@ -463,3 +466,8 @@ img {
 
 
 /*Automation section*/
+
+#graybackground {
+  background-color: rgb(184, 179, 179);
+  padding: 0.75rem;
+}

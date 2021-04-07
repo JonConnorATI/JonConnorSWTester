@@ -33,19 +33,19 @@
       <div class="codeblock">
         <div class="code">
           <p class="feature"><span>Package </span>cucumber.steps;</p><br>
-          <p class="feature"><span>import </span>cucumber.api.PendingException;</p>
+          <p class="feature"><span>import </span>cucumber.api.Pending<wbr>Exception</p>
           <p class="feature"><span>import </span>cucumber.api.java.en.Given;</p>
           <p class="feature"><span>import </span>cucumber.api.java.en.Then;</p>
           <p class="feature"><span>import </span>cucumber.api.java.en.When;</p><br>
           <p class="feature"><span class="red">Public class </span>GradeSteps {</p><br>
             <p>&emsp;&emsp;<span class="grey">@Given</span>(<span class="lblue">"^(\\d+) is entered into the score section$"</span>)</p>
-            <p>&emsp;&emsp;<span class="red">Public void </span>is_entered_into_the_score_section(<span class="red">int </span><span class="lred">arg1</span>) <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>is_entered_into_the_<wbr>score_section(<span class="red">int </span><span class="lred">arg1</span>) <span class="red">throws</span> Throwable {</p>
             <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
             <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
             <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
           
             <p>&emsp;&emsp;<span class="grey">@When</span>(<span class="lblue">"^the grade button is pressed$"</span>)</p>
-            <p>&emsp;&emsp;<span class="red">Public void </span>the_grade_button_is_pressed() <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>the_grade_button_is<wbr>_pressed() <span class="red">throws</span> Throwable {</p>
             <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
             <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
             <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
@@ -69,27 +69,35 @@
             <p>&emsp;&emsp;&emsp;&emsp;}</p><br>
 
             <p>&emsp;&emsp;<span class="grey">@Then</span>(<span class="lblue">"^Distinction should be displayed$"</span>)</p>
-            <p>&emsp;&emsp;<span class="red">Public void </span>distinction_should_be_displayed() <span class="red">throws</span> Throwable {</p>
+            <p>&emsp;&emsp;<span class="red">Public void </span>distinction_should_be<wbr>_displayed() <span class="red">throws</span> Throwable {</p>
             <p>&emsp;&emsp;&emsp;&emsp;<span class="lgreen">// Write code here that turns the phrase above into concrete actions</span></p>
             <p class="feature">&emsp;&emsp;&emsp;&emsp;<span class="red">throw new </span>PendingException();</p>
             <p>&emsp;&emsp;&emsp;&emsp;}</p>
             <p>}</p>
             
-
-
-
-          
-
-
         </div>
     </div>
   </div>
   </div>
 
-  
-  <h2>Page under construction</h2>
-  
-  <h3><a href="index.html#bdd">Go Back</a></h3>
+  <div class="container-intro">
+    <div class="container--a">
+      <p class="ost--one">So the code snippets we have been given are the bare bones needed to run in Java. It won't give us much yet, infact the code will just skip the steps courtesy of: 
+      <span class="red">throw new </span>PendingException();<br><br>
+      However, the green text, <span class="lgreen">// Write code here that turns the phrase above into concrete actions </span>is where we will write the code to execute the steps. I don't want to turn this into a Java lesson so I will leave it there but the point I want to make is that the code now runs in blocks that are mapped to the steps we created in the feature file. Can you see that the steps, <span class="red">Given</span>, <span class="red">When</span>,<span class="red">Then</span> are testing the behaviour of the software as defined in the feature file (our requirements).<br><br>
+      We can run this code now and it will give us a report on how the tests performed, which steps passed, failed or were skipped.<br><br></p>
+      <p class="ost--one" id="graybackground">So to sum it all up we write the <span class="red">feature file </span>from our <span class="red">converstions</span>, run the file which gives us a report that is a live copy of our <span class="red">requirements</span>. We are also given the skeleton code for our <span class="red">automation testing</span>. Once we are ready we can fill in our code and run the test, this will then produce a test report and hopefully tell the <span class="red">client</span> that the tests have <span class="red">passed</span> and the <span class="red">software meets the requirements.</span> &#128519;</p>
+      <p class="ost--one"><br>I created a simple web page where I tested the feature file. Please feel free to check it out and see if you can break it (I added some validation not documented here). I've also made a video of the feature file running in eclipse if you want to see it in action.<br><br><br>
+        See test <a id="report" href="Resources/extentReports/report.html" target="popup" onclick="window.open('Resources/extentReports/report.html'); return false">report here</a>
+        <br><br><br>See <a id="report" href="placeholder1.html" target="popup" onclick="window.open('placeholder1.html'); return false">video here</a>
+        <br><br><br>
+        I hope you found that interesting, and for those who are new to BDD, you could follow it and have learnt a little and for the experts who might be reading this I hope I've not made too many mistakes. I would be delighted to hear from anybody who is looking for a software tester.<br><br><br>You can find my contact details in my <a id="report" href="Resources/Jon_Connor_CV.pdf" target="popup" onclick="window.open('Resources/Jon_Connor_CV.pdf'); return false">CV here</a>
+        <br><br><br><b>To review the previous section select the back arrow at the top of the page or you can select exit to go to the home page.</b>
+      
+      </p>
+  </div>
+    </div>
+  <!--<h2>Page under construction</h2><h3><a href="index.html#bdd">Go Back</a></h3>--> 
   
     <footer>
       <h3>&copy; Jon Connor 2021</h3>
