@@ -73,13 +73,13 @@ h1 {
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color:#27afea;
+  background-color:#3e8e41;
 }
 
 /*Hover for BDD SECTION*/
 .item:hover {
  transform: scale(1.2);
- border: 2px solid lightblue;
+ border: 2px solid #3e8e41;
  margin: 2px;
  padding: 2px; 
 }
@@ -97,7 +97,7 @@ h1 {
 }
 
 #report:hover {
-  background-color:#27afea;
+  background-color:#3e8e41;
   padding: 1rem;
 }
 
@@ -319,7 +319,7 @@ h1 {
 }
 
 .left a:hover, .center a:hover, .right a:hover {
-  background-color: #27afea;
+  background-color: #3e8e41;
 }
 
 
@@ -529,13 +529,14 @@ img {
 
 .dropbtn {
   display: flex;
-  background-color: #4CAF50;
+  background-color: #595959;
   color: white;
   padding: 0.5rem;
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
   margin: 1rem;
+  
 
 }
 
@@ -549,15 +550,16 @@ img {
   position: absolute;
   right: 0;
   background-color: #f9f9f9;
-  min-width: 160px;
+  max-width: 18rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 1rem;
 }
 
 .dropdown-content a {
   color: black;
-  margin-top: 20px;
-  padding: 12px 16px;
+  margin: 0.5rem;
+  padding: 0.6rem;
   text-decoration: none;
   display: block;
 }
