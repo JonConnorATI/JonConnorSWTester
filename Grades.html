@@ -5,25 +5,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bash Street School</title>
-        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            .container--grades {
+                min-width: 70%;
+                margin: 0 auto;
+                background-color: darkred;
+            }
+
+
+        </style>
         
 
     
     </head>
     <body>
-        <div>
-            <h1>End of Year Grades</h1>
+        <div class="container--grades">
+            <div class="header"><h1>End of Year Grades</h1></div>
+            <div class="header-two"><h2>Enter the student's score</h2></div>
+            <div class="input"><input placeholder="Enter Score (0 - 100)" id="numb">
+            <p id="demo"></p></div>
+            <div class="button"><button type="button" onclick="myFunction()">Press for Grade</button></div>
+            <div class="output"><output></output></div>
+
         </div>
-        <div>
-            <h2>Enter the student's score</h2>
-        </div>
-        <div>
-           <input placeholder="Enter Grade">
-        </div>
-        <div>
-            <button>Press for Grade</button>
-        </div>
-        <div>
-            <output></output>
-        </div>
+
+      
+
+        <script>
+            function myFunction() {
+              var x, text;
+            
+              // Get the value of the input field with id="numb"
+              x = document.getElementById("numb").value;
+            
+              // If x is Not a Number or less than one or greater than 10
+              if (isNaN(x) || x < 1 || x > 100) {
+                text = "Input not valid";
+              } else {
+                text = "";
+              }
+              document.getElementById("demo").innerHTML = text;
+            }
+            </script>
+        
     </body>
