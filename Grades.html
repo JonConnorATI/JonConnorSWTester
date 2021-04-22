@@ -51,7 +51,7 @@
            }
 
            input[type="text"] {
-                width: 12rem;
+                width: 15rem;
                 height: 2rem;
                 font-weight: bolder;
                 }
@@ -102,8 +102,8 @@
               x = document.getElementById("numb").value;
             
               // If x is Not a Number or less than one or greater than 10
-              if (isNaN(x) || x < 1 || x > 100) {
-                grade = "Input not valid";
+              if (isNaN(x) || x < 0 || x > 100) {
+                grade = "Input number between (0 & 100)";
               } else {
                 if (isNaN(x) || x>79) {
                   grade="Distinction"
