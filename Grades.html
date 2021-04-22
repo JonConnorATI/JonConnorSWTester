@@ -12,10 +12,29 @@
                 border: 0;
             }
             .container--grades {
-                min-width: 70%;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
                 margin: 0 auto;
                 background-color: darkred;
             }
+
+            .grades--section {
+                display: flex;
+                margin:2rem;
+                padding:2rem;
+                flex-direction: column;
+                align-items: center;
+                max-width: 75%;
+            }
+
+            img {
+            display: flex;
+            /* align-items: center; */
+            margin: auto;
+            }
+
+            
 
 
         </style>
@@ -24,32 +43,53 @@
     
     </head>
     <body>
+        
+        
+       
         <div class="container--grades">
-            <div class="header"><h1>End of Year Grades</h1></div>
-            <div class="header-two"><h2>Enter the student's score</h2></div>
-            <div class="input"><input placeholder="Enter Score (0 - 100)" id="numb">
-            <p id="demo"></p></div>
-            <div class="button"><button type="button" onclick="myFunction()">Press for Grade</button></div>
-            <div class="output"><output></output></div>
-
-        </div>
+            <div class="grades--section">
+                <div class="header"><h1>End of Year Grades</h1></div>
+                <div class="image">
+                    <img src="./Resources/images/bashstreet.png" width="100%">
+                </div>
+                <div class="header-two"><h2>Enter the student's score</h2></div>
+                <div class="input"><input type="text" placeholder="Enter Score (0 - 100)" id="numb">
+                </div>
+                <div class="button"><button type="button" onclick="myFunction()">Press for Grade</button></div>
+                <div class="input" ><input type="text" id="demo" placeholder="Grade"></div>
+            </div>
+       </div>
 
       
 
         <script>
             function myFunction() {
-              var x, text;
+              var x, grade;
             
               // Get the value of the input field with id="numb"
               x = document.getElementById("numb").value;
             
               // If x is Not a Number or less than one or greater than 10
               if (isNaN(x) || x < 1 || x > 100) {
-                text = "Input not valid";
+                grade = "Input not valid";
               } else {
-                text = "";
+                if (isNaN(x) || x>79) {
+                  grade="Distinction"
+              }  else {
+                  if(isNaN(x) || x>64) {
+                      grade="Merit"
+                  } else {
+                      if(isNaN(x) || x>49) {
+                          grade="Pass"
+                      } else {
+                          grade="Fail"
+                      }
+                  }
               }
-              document.getElementById("demo").innerHTML = text;
+              }
+              
+
+              document.getElementById("demo").value = grade;
             }
             </script>
         
