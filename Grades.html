@@ -15,23 +15,52 @@
                 display:flex;
                 flex-direction: column;
                 align-items: center;
-                margin: 0 auto;
-                background-color: darkred;
+                margin: 2rem;
+               
             }
 
             .grades--section {
                 display: flex;
-                margin:2rem;
-                padding:2rem;
+                margin: 0 auto;
+                
                 flex-direction: column;
                 align-items: center;
-                max-width: 75%;
+                background-color: darkred;
             }
 
             img {
             display: flex;
             /* align-items: center; */
             margin: auto;
+            }
+
+            .image {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+
+            }
+
+           .header-two, .input, .button {
+               margin-top: 1rem;
+               
+           }
+
+           #demo {
+               margin-bottom: 1rem;
+           }
+
+           input[type="text"] {
+                width: 12rem;
+                height: 2rem;
+                font-weight: bolder;
+                }
+            
+            button[type="button"] {
+                padding: 1rem;
+                background-color: #595959;
+                border-radius: 35%;
+                color: cornsilk;
             }
 
             
@@ -47,18 +76,21 @@
         
        
         <div class="container--grades">
-            <div class="grades--section">
+            
                 <div class="header"><h1>End of Year Grades</h1></div>
-                <div class="image">
-                    <img src="./Resources/images/bashstreet.png" width="100%">
+                <div class="image"><img src="./Resources/images/bashstreet.png" width="40%"></div>
+        </div>        
+                <div class="grades--section">
+                    
+                    <div class="header-two"><h3>Enter the student's score</h3></div>
+                    <div class="input"><input type="text" placeholder="Enter Score (0 - 100)" id="numb"></div>
+                    <div class="button"><button type="button" onclick="myFunction()">Press for Grade</button></div>
+                    <div class="input" ><input type="text" id="demo" placeholder="Grade"></div>
+
                 </div>
-                <div class="header-two"><h2>Enter the student's score</h2></div>
-                <div class="input"><input type="text" placeholder="Enter Score (0 - 100)" id="numb">
-                </div>
-                <div class="button"><button type="button" onclick="myFunction()">Press for Grade</button></div>
-                <div class="input" ><input type="text" id="demo" placeholder="Grade"></div>
-            </div>
-       </div>
+                
+        
+      
 
       
 
