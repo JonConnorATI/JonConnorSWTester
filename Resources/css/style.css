@@ -73,13 +73,13 @@ h1 {
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color:#3e8e41;
+  background-color:rgb(14, 131, 167);
 }
 
 /*Hover for BDD SECTION*/
 .item:hover {
  transform: scale(1.2);
- border: 2px solid #3e8e41;
+ border: 2px solid rgb(14, 131, 167);
  margin: 2px;
  padding: 2px; 
 }
@@ -90,8 +90,8 @@ h1 {
   color: cornsilk;
   font-size: 1rem;
   font-style: italic;
-  margin: 0.5rem;
-  background-color: darkred;
+  font-weight: bolder;
+  background-color: #27afea;
   border-radius: 50%;
   padding:0.5rem;
 }
@@ -101,8 +101,8 @@ h1 {
   color: cornsilk;
   font-size: 1rem;
   font-style: italic;
-  margin-top: 1rem, 0 1rem 0;
-  background-color: darkred;
+  font-weight: bolder;
+  background-color: #27afea;
   border-radius: 50%;
   padding:0.5rem;
 }
@@ -110,7 +110,7 @@ h1 {
 
 
 #report:hover, #reportcv:hover {
-  background-color:#3e8e41;
+  background-color:rgb(14, 131, 167);
   padding: 1rem;
 }
 
@@ -147,7 +147,7 @@ h1 {
 
 #BDD {
   
-  background-color: darkred;
+  background-color: #27afea;
   color: cornsilk;
   margin: 1rem 0 0 0;
 }
@@ -209,7 +209,7 @@ h1 {
   align-items: stretch;
   margin: 0 auto;
   max-width: 100%;
-  background-color:darkred;
+  background-color:#27afea;
   
   
 
@@ -236,6 +236,7 @@ h1 {
   margin: 2rem 0.5rem;
   align-items: center;
   flex-wrap: wrap;
+  color: cornsilk;
      
 }
 
@@ -337,7 +338,7 @@ h1 {
 }
 
 .left a:hover, .center a:hover, .right a:hover {
-  background-color: #3e8e41;
+  background-color: rgb(14, 131, 167);
 }
 
 
@@ -404,7 +405,7 @@ img {
 }
 
 #bdd--vid--section {
-  background-color: darkred;
+  background-color:#27afea;
 }
 
 /*Cucumber image page*/
@@ -498,7 +499,7 @@ img {
 .item--container {
   display: flex;
   height: 30rem;
-  background-color: darkred;
+  background-color: #27afea;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -589,6 +590,6 @@ img {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color:rgb(14, 131, 167);
 }
 
