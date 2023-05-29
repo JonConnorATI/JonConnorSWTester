@@ -217,9 +217,9 @@ p .gnt:hover {
 .container--a{
   
   flex-direction: column;
-  /* display: flex; */
+  display: flex; 
   max-width: 80%;
-  align-items: center;
+  align-items:center;
   /*justify-content: center;*/
   
 }
@@ -229,7 +229,7 @@ p .gnt:hover {
 }
 
 .ost--one, .ost--two {
-  text-align: justify;
+  text-align:justify;
   flex: 1 1 auto;
   margin: 5px 0 5px 0;
   font-size: 1rem;
@@ -265,7 +265,7 @@ p .gnt:hover {
   align-items: stretch;
   margin: 0 auto;
   max-width: 100%;
-  /*background-color:#27afea;*/
+  background-color:#27afea;
   
   
 
@@ -288,7 +288,7 @@ p .gnt:hover {
   flex-direction: column;
   display: flex;
   padding: 3rem 0.5rem;
-  /*background-color: #595959;*/
+  background-color: #27afea;
   margin: 2rem 0.5rem;
   align-items: center;
   flex-wrap: wrap;
@@ -438,6 +438,20 @@ footer {
 
 }
 
+.list {
+  list-style-type: disc;
+  font-size: 1.3rem;
+  color: cornsilk;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 85%;
+}
+
+.list li {
+  margin: 0.8rem;
+}
+
 .imgCenter {
   display: block;
   margin-left: auto;
@@ -575,7 +589,7 @@ img {
   border: 0.4rem solid #27afea;
   height: 15rem;
   width: 15rem;
-  align-items: center:
+  align-items: center;
   justify-content: center;
   
   border-radius: 50%;
@@ -611,6 +625,7 @@ img {
 }
 
 
+
 .dropbtn {
   display: flex;
   background-color: #595959;
@@ -634,7 +649,7 @@ img {
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f9f9f9;
+  background-color: #27afea;
   max-width: 18rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -642,20 +657,20 @@ img {
 }
 
 .dropdown-content a {
-  color: black;
+  color: cornsilk;
   margin: 0.5rem;
   padding: 0.6rem;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+/*.dropdown-content a:hover {background-color: #f1f1f1;}*/
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color:rgb(14, 131, 167);
+  background-color:#27afea;
 }
 
