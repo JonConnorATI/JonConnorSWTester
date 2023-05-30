@@ -70,6 +70,27 @@ p .gnt {
  
 }
 
+@media only screen and (max-width: 520px) {
+  p .gnt.contact--mobile, p #cvbutton {
+  text-decoration: none;
+  color:cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #595959;
+  border-radius: 0;
+  padding: 0;
+
+  }
+
+  p .gnt.contact--mobile:hover, p #cvbutton:hover {
+    background-color:rgb(14, 131, 167);
+    padding: 0.2rem;
+  }
+
+
+}
+
 p .gnt:hover {
   background-color:rgb(14, 131, 167);
   padding: 1rem;
@@ -169,6 +190,8 @@ p .gnt:hover {
   }
 }
 
+
+
 #Name {
   
   position:absolute; 
@@ -236,6 +259,8 @@ p .gnt:hover {
 }
 
 
+
+
 .container-aboutMe {
   align-items: center;
   display: flex;
@@ -289,7 +314,7 @@ p .gnt:hover {
   display: flex;
   padding: 3rem 0.5rem;
   background-color: #27afea;
-  margin: 2rem 0.5rem;
+  /*margin: 2rem 0.5rem;*/
   align-items: center;
   flex-wrap: wrap;
   color: cornsilk;
@@ -303,7 +328,7 @@ p .gnt:hover {
   margin-bottom: 0.8rem;
   display: flex;
   
-  color: #000;
+  color: cornsilk;
      
 }
 
@@ -320,7 +345,7 @@ h4 {
   background-color: #595959;
   padding: 1rem;
   margin: 0.6rem;
-  border-radius: 12%;
+ 
   display: flex;
   flex-wrap: wrap;
   max-width: 80%;
@@ -636,6 +661,7 @@ img {
   cursor: pointer;
   margin: 1rem;
   text-align: left;
+  
   
 
 }

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bug Reports</title>
+        <style>
+          /*reset defaults*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+/* Fonts */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+#about-me {
+  color:cornsilk;
+}
+
+p .gnt {
+  text-decoration: none;
+  color:cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #595959;
+  border-radius: 50%;
+  padding:0.5rem;
+  
+ 
+}
+
+p .gnt:hover {
+  background-color:rgb(14, 131, 167);
+  padding: 1rem;
+}
+
+
+
+
+h1 {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+} 
+
+
+
+/* NavBar */
+.navbar {
+  width: 100%;
+  background-color: #595959;
+  overflow: hidden;
+  position: fixed;
+  top: -0.5rem;
+  z-index: 4;
+   
+}
+
+/* navbar items */
+.navbar a, #transcript {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1.5rem 0.5rem;
+  color:cornsilk;
+  text-align: center;
+ 
+}
+
+/* Navbar left */
+.navleft a {
+  float: left;
+  
+}
+
+/* Navbar right */
+.navright a {
+  float: right;
+ 
+}
+
+#list-last {
+  float: right;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color:rgb(14, 131, 167);
+}
+
+/*Hover for BDD SECTION*/
+.item:hover {
+ transform: scale(1.2);
+ border: 2px solid rgb(14, 131, 167);
+ margin: 2px;
+ padding: 2px; 
+}
+
+/*Hover for CUCUMBER REPORT*/
+#report {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #27afea;
+  border-radius: 50%;
+  padding:0.5rem;
+}
+
+#reportcv {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #27afea;
+  border-radius: 50%;
+  padding:0.5rem;
+}
+
+
+
+#report:hover, #reportcv:hover {
+  background-color:rgb(14, 131, 167);
+  padding: 1rem;
+}
+
+
+/*Nav bar link text*/
+.navbar p {
+  float: right;
+  margin: 0 0.5rem;
+
+}
+
+/*Nav bar link text not displayed on devices*/
+@media only screen and (max-width: 520px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  p .gnt.contact--mobile {
+  text-decoration: none;
+  color:cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #595959;
+  border-radius: 0;
+  padding: 0;
+
+  }
+
+  p .gnt.contact--mobile:hover {
+    background-color:rgb(14, 131, 167);
+    padding: 0.2rem;
+  }
+
+
+}
+
+#Name {
+  
+  position:absolute; 
+  left:50%; 
+  transform:translateX(-50%);
+  padding: 1.5rem 0.5rem;
+  color: cornsilk;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+
+}
+
+.main {
+  margin-top: 4rem;
+}
+
+#BDD {
+  
+  background-color: #27afea;
+  color: cornsilk;
+  margin: 1rem 0 0 0;
+}
+
+.container-intro {
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+  
+}
+
+.container--a{
+  
+  flex-direction: column;
+  /* display: flex; */
+  max-width: 80%;
+  align-items: center;
+  /*justify-content: center;*/
+  
+}
+
+
+
+.ost--one, .ost--two {
+  text-align: justify;
+  flex: 1 1 auto;
+  margin: 5px 0 5px 0;
+  font-size: 1rem;
+}
+
+#whitep, #whiteh {
+  color: cornsilk;
+}
+
+#whitep {
+  font-size: 1.2rem;
+}
+
+
+.container-aboutMe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color:black;
+  /*background-color: #27afea;*/
+  padding: 2rem;
+  margin: 0;
+  max-height: 40rem;
+  }
+
+  #section1 {
+    background-color: darkred;
+  }
+
+  .vid--ost, #transcript {
+    margin:1rem;
+    padding:1rem;
+    
+    
+  }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color:#27afea;
+  
+  
+
+}
+
+#title {
+  margin: 0;
+  padding-top: 1.5rem;
+  background-color: #27afea;
+  text-align: center;
+  color: cornsilk;
+}
+
+
+.left,
+.center,
+.right {
+  
+  min-width: 25%;
+  flex-direction: column;
+  display: flex;
+  padding: 3rem 0.5rem;
+  /*background-color: #595959;*/
+  margin: 2rem 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  color: cornsilk;
+     
+}
+
+.left h2,
+.center h2,
+.right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+     
+}
+
+
+
+.left p, .center p, .right p {
+  color: cornsilk;
+  background-color: #595959;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+
+  
+  
+}
+
+.left--text, .center--text, .right--text {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+}
+
+
+/*left-right-center containers display in block when on devices*/ 
+
+@media only screen and (max-width: 520px) {
+  .container {
+    display: block;
+    min-width:75%;
+  }
+
+  .left--text, .center--text, .right--text {
+    
+    max-width: 60%;
+    
+}
+}
+
+/*container images*/
+.container img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+/*Image Titles */
+.box{
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+.box .imgTitle {
+  position: absolute;
+  /*z-index: 2;*/
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 100%; /* Set the width of the positioned div */
+  padding: 0.5rem 0 0.5rem 0;
+  /*border: 0.1rem solid #595959;*/
+  background-color: #595959;
+  z-index: 2;
+}
+
+/*image links*/
+.left a, .center a, .right a {
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1.2rem;
+}
+
+.left a:hover, .center a:hover, .right a:hover {
+  background-color: rgb(14, 131, 167);
+}
+
+
+
+
+/*Footer*/
+h3  {
+  text-align: left;
+  margin: 1rem;
+  color: cornsilk;
+  
+}
+
+footer {
+  background-color: #595959;
+  padding: 0.5rem;
+
+}
+/*BDD Page*/
+#bdd--title {
+  padding-top: 2rem;
+} 
+
+/*Video*/
+.centervid { 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  
+ 
+
+}
+
+.imgCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+@media only screen and (max-width: 520px) {
+  .imgCenter {
+    width: 90%;
+  }
+}
+
+img {
+  filter: saturate(200%);
+}
+
+/*BDD PAGE VIDEO CONTAINER*/
+.video--container {
+
+  align-items: center;
+  
+  flex-direction: column;
+  font-size: 0.9rem;
+  color:black;
+  /*background-color: #27afea;*/
+  padding: 2rem;
+  margin: 1rem;
+  
+}
+
+#bdd--vid--section {
+  background-color:#27afea;
+}
+
+/*Cucumber image page*/
+
+.imgCenterCucumber {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+@media only screen and (max-width: 520px) {
+  .imgCenterCucumber {
+    width: 100%;
+  }
+}
+
+
+/*cucumber code block */
+.codeblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  flex-wrap: wrap;
+  
+}
+
+
+.code {
+  flex-direction: column;
+  /* display: flex; */
+  width: 80%;
+  align-items:center;
+  /*justify-content: center;*/
+  text-align: left;
+  background-color: rgb(184, 179, 179);
+  font-size: 1.1rem;
+  padding: 0.35rem 0 0 0.35rem;
+}
+
+.feature span {
+  color: red;
+  font-weight: bold;
+}
+
+.given span {
+  color: red;
+  font-style: italic;
+  /*font-weight: lighter;*/
+}
+
+.given em {
+  color:blue;
+  font-style: normal;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.lgreen {
+  color: green;
+}
+
+.lblue {
+  color:blue;
+  font-weight: lighter;
+}
+
+.lred {
+  color: rgb(245, 55, 86);
+}
+
+.grey {
+  
+  color:grey;
+}
+
+.italic--red {
+  color: red;
+  font-style: italic
+  ;
+}
+
+
+
+/*BDD GRAPHIC AND LINK */
+
+.item--container {
+  display: flex;
+  height: 30rem;
+  background-color: #27afea;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  border: 0.4rem solid #27afea;
+  height: 22rem;
+  width: 22rem;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  
+}
+
+.bddimage {
+  max-width: 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+/*Automation section*/
+
+#graybackground {
+  background-color: rgb(184, 179, 179);
+  padding: 0.75rem;
+}
+
+/*dropdown section for 7 principles*/
+
+.contents-seven {
+  max-width: 80%;
+  flex-direction: row;
+  display: flex;
+  padding: 1.5rem;
+  /*background-color: #595959;*/
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+
+
+.dropbtn {
+  display: flex;
+  background-color: #595959;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  text-align: left;
+  
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  max-width: 18rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 1rem;
+}
+
+.dropdown-content a {
+  color: black;
+  margin: 0.5rem;
+  padding: 0.6rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:rgb(14, 131, 167);
+}
+
+.container--istqb {
+  background-color:#27afea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-defects {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  
+}
+
+.container--d {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.copyright {
+  color:cornsilk;
+}
+        </style>
+        <script src="https://kit.fontawesome.com/e532e7082b.js" crossorigin="anonymous"></script>
+
+
+        
+    
+    </head>
+    <body>
+
+
+<!--NavBar-->
+<div class="navbar">
+  <div class="navleft">
+    <a class="active" href="index.html#bdd"><p class="mobile">Exit</p><i class="fas fa-times"></i></a>
+  </div>
+     
+  <h2 id="Name">Bug Report</h2>
+   <div class="navright"> 
+    <a href="https://jonconnorati.github.io/JonConnor/" target="_blank" id="list-last"><p class="mobile">GitHub</p><i class="fab fa-github"></i></a>
+    <a href="mailto:jonconnor@live.ie" target="_blank"><p class="mobile">Email</p><i class="fas fa-at"></i></a>
+    <a href="#" target="_blank"><p class="mobile">CV</p><i class="fa fa-id-card"></i></a>
+    <a href="https://www.linkedin.com/in/jonconnordublin/" target="_blank"><p class="mobile">Profile</p><i class="fab fa-linkedin"></i></a>
+  </div>
+</div>
+
+<div id="start"><p id="about-me">Helper text</p></div>
+<div class="main">
+<!--What makes a good bug report--> 
+  <div class="container-intro">
+    <div class="container--a">
+      <h1 class=>What Makes a Good Bug Report</h1>
+      <p class="ost--one">I have been asked, <q>What makes a good bug report</q> at every interview. It is important because it helps the team fix the bug and provide metrics for the project about defects.<br><br>Opening Jira, the other day to write a ticket it hit me. Jira automatically handles the generation (or prompts for inputs) for many of the items we need to write a good report. For example, <em>ID</em>, <em>Author</em>, <em>Severity</em>, <em>Priority</em>. We shouldn’t take these for granted and understand why they are needed.<br><br>Here is a reminder, if you are preparing for interviews, what actually does make a good bug report from the ISTQB definition of a defect report.</p>
+  
+    </div>
+  </div>
+<!--Video section
+  <div class="container-aboutMe" id="section1">
+    <div class="centervid">
+      <p class="vid--ost"><b>Press <i class="fas fa-play-circle"></i> to watch the video.</b></p>
+        <video class="vid" width="70%" controls>
+          <source src=">
+         </video>
+                
+         
+    </div>
+    
+    
+  </div>-->
+<!--BDD/CUCUMBER/AUTOMATION SECTION-->
+  <!--<div class="container-intro" id="BDD" href="#bdd">
+    <div class="container--a">
+      <h1>Behavior Driven Development (BDD)</h1>
+        <p class="ost--one">I'm a big fan of BDD and used it to implement a new module in an existing software package last year. The collaboration between devlopers, testers and the business users by communicating in non technical language to build software is a very powerful tool.<br><br>
+        Result - software was delivered <i><b>faster</b></i> and <i><b>better.</b></i><br><br>
+        Click on the item below to enter the BDD section and find out more about Cucumber, Gherkin and Automation.</p>
+    </div>
+  </div>-->
+  
+  <!--<div class="container">
+
+    <div class="left" id="bdd"> 
+      <div class="box">
+        <a href="bdd.html" class="imgTitle">BDD</a>
+        <img class="bdd" src="Resources/images/BDD.png" alt="BDD Diagram">
+      </div>
+    </div>
+
+    <div class="center" id="cucumber">
+      <div class="box"><a href="cucumber.html" class="imgTitle">Cucumber</a>
+        <img class="cucumber" src="Resources/images/Cucumber.PNG" alt="Cucumber Diagram">
+      </div>  
+    </div>
+
+    <div class="right" id="automation">
+      <div class="box"><a href="automation.html" class="imgTitle">Automation</a>
+        <img class="automation" src="Resources/images/Automation.png" alt="Automation Diagram">
+      </div>
+    </div>
+
+  </div>-->
+
+  <!--<div class="item--container">
+    <div class="item">
+      <a href="bdd.html"><img class ="bddimage" src="Resources/images/BDD2.png" alt="BDD GRAPHIC" ></a>
+      
+    </div>
+  </div>-->
+   <!--Defect Criteria-->
+   <div class="container--istqb">
+<div class="container-defects">
+    <div class="container--d">
+      <h1 id="whiteh">ISTQB Definition of a Defect Report</h1>
+        <p class="ost--one" id="whitep">Below are the points mentioned in the ISTQB syllabus,<em> hover on each one, </em>I have included a brief description.<br><br>A defect report filed during dynamic testing typically includes:
+        </p>
+    </div>
+  </div>
+    <div class="container">
+      <div class="contents-seven">
+        <div class="dropdown"><button class="dropbtn">An identifier</button>
+        <div class="dropdown-content"><a>The identifier is very important in being able to refer to the defect.</a></div>
+      </div>
+      <div class="dropdown"><button class="dropbtn">A title and a short summary of the defect being reported</button>
+        <div class="dropdown-content"><a>An impactful bug report immediately tells anyone reading it what the problem is in the title.</a></div>
+      </div>
+         
+        <div class="dropdown"><button class="dropbtn">Date of the defect report</button>
+          <div class="dropdown-content"><a>The date and time that the defect occurred or reported is also essential. This is useful when you want to search for defects that were identified for a particular release of software or from when a testing phase started.</a></div>
+        </div>
+       
+        <div class="dropdown"><button class="dropbtn">issuing organization, and author</button>
+          <div class="dropdown-content"><a>we may need to refer to the person who raised the defect, we have to know who to contact.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Identification of the test item (configuration item being tested) and environment. </button>
+          <div class="dropdown-content"><a>Developers may work with several projects concurrently, so this will inform them which application and version a bug was reproduced in.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">The development lifecycle phase(s) in which the defect was observed</button>
+          <div class="dropdown-content"><a>This information shows us what phase the bug occurred in. It could help identify an issue with the integration of another module or feature.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">A description of the defect to enable reproduction and resolution, including logs, database dumps, screenshots, or recordings (if found during test execution)</button>
+          <div class="dropdown-content"><a>If your bug is not reproducible, then it will never get fixed. You should clearly mention the steps to reproduce the bug. Do not assume or skip any reproducing step. A bug which is described step by step is easy to reproduce and fix.<br><br>A picture paints a thousand words so screenshots, or any outputs are desirable if available.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Expected and actual results</button>
+          <div class="dropdown-content"><a>The difference between Actual and Expected is the bug. It allows everyone on the team to quickly understand how the bug behaves, what the bug is, how it differs from the expectation.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Scope or degree of impact (severity) of the defect on the interests of stakeholder(s)</button>
+          <div class="dropdown-content"><a>Bug severity is the measure of impact a defect (or bug) can have on the development or functioning of an application feature when it is being used. It depends on the effect of the bug on the system.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Urgency/priority to fix</button>
+          <div class="dropdown-content"><a>Bug priority refers to how urgently a bug needs to be fixed and eliminated from the website or app in question.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">State of the defect report (e.g., open, deferred, duplicate, waiting to be fixed, awaiting confirmation testing, re-opened, closed)</button>
+          <div class="dropdown-content"><a>Informs everyone where the defect/bug is in the defect/bug lifecycle.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Conclusions, recommendations and approvals</button>
+          <div class="dropdown-content"><a>Mention any recommendations you have, it could help the developer.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Global issues, such as other areas that may be affected by a change resulting from the defect</button>
+          <div class="dropdown-content"><a>For example the product catalogue is broken, this will effect the shopping cart.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">Change history, such as the sequence of actions taken by project team members with respect to the defect to isolate, repair, and confirm it as fixed</button>
+          <div class="dropdown-content"><a>The defect may get re opened in the future, so its good to know what steps have been taken already to resolve the issue.</a></div>
+        </div>
+        <div class="dropdown"><button class="dropbtn">References, including the test case that revealed the problem</button>
+          <div class="dropdown-content"><a>Gives metrics on where bugs are appearing or which tests are revealing bugs.</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-defects">
+      <div class="container--d">
+        <p class="ost--one" style="color: cornsilk;">Copyright Notice © International Software Testing Qualifications Board (hereinafter called ISTQB®) ISTQB® is a registered trademark of the International Software Testing Qualifications Board. This document may be copied in its entirety, or extracts made, if the source is acknowledged.
+          </p>
+      </div>
+    </div>
+   </div>
+  
+   
+    
+  
+  <!--My skills section-->
+  <!--<div class="container-intro">
+    <div class="container--a">
+      <h1>Make Jira pretty</h1>
+        <p class="ost--one">I was working with Jira for a few years before I realised you can format your bug reports. Its really simple to do and makes the information in your tickets stand out. This will help the developer quickly find the information and ultimatley fix the bug.</p>
+    </div>
+  </div>
+
+  <div class="codeblock">
+    <div class="code">
+      <p class="feature"><span>Feature: </span>Scores and Grades</p><br>
+      <p>Calculate the grade from an exam score</p><br>
+      <p class="feature"><span>Scenario: </span>Fail</p>
+      <p class="given"><span>Given: </span>a score &#60;49 is entered into the score section</p>
+      <p class="given"><span>When: </span>the grade button is pressed</p>
+      <p class="given"><span>Then: </span><em>&#34;Fail&#34;</em> is displayed</p><br>
+
+      <p class="feature"><span>Scenario: </span>Pass</p>
+      <p class="given"><span>Given: </span>a score &GreaterEqual;50 and &leq;64 is entered into the score section</p>
+      <p class="given"><span>When: </span>the grade button is pressed</p>
+      <p class="given"><span>Then: </span><em>&#34;Pass&#34;</em> is displayed</p><br>
+
+      <p class="feature"><span>Scenario: </span>Merit</p>
+      <p class="given"><span>Given: </span>a score &GreaterEqual;65 and &leq;79 is entered into the score section</p>
+      <p class="given"><span>When: </span>the grade button is pressed</p>
+      <p class="given"><span>Then: </span><em>&#34;Merit&#34;</em> is displayed</p><br>
+
+      <p class="feature"><span>Scenario: </span>Distinction</p>
+      <p class="given"><span>Given: </span>a score &GreaterEqual;80 and &leq;100 is entered into the score section</p>
+      <p class="given"><span>When: </span>the grade button is pressed</p>
+      <p class="given"><span>Then: </span><em>&#34;Distinction&#34;</em> is displayed</p><br>
+
+
+    </div>
+
+  </div>-->
+  <!--<div class="container">
+    <div class="left">
+      <h2>Technical</h2>
+      <div class="left--text">
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>Javascript</p>
+      <p>Python</p>
+      <p>SQL</p>
+      <p>Java</p>
+      <p>Selenium</p>
+      <p>Cucumber</p>
+      <p>Gherkin</p>
+      <p>Git</p>
+      <p>Jira</p>
+    </div>
+      
+      
+      
+    </div>
+    <div class="center">
+      <h2>Testing</h2>
+      <div class="center--text">
+        <p>ISTQB</p>
+        <p>ISTQB Agile</p>
+        <p>Test Cases</p>
+        <p>User Stories</p>
+        <p>Planning</p>
+        <p>Estimation</p>
+        <p>Requirements</p>
+        <p>Psuedo Code</p>
+        <p>Black Box</p>
+        <p>Exploratory</p>
+        <p>Test Plans</p>
+        <p>Test Execution</p>
+      </div>
+       
+    </div>
+    <div class="right">
+      <h2>Soft Skils</h2>
+      <div class="right--text">
+        <p>Communication</p>
+        <p>Share Knowledge</p>
+        <p>Adaptable</p>
+        <p>Advocate for users</p>
+        <p>Organised</p>
+        <p>Understand</p>
+        <p>Positive</p>
+        <p>Empathy</p>
+       </div>
+        
+    </div>
+  </div>-->
+
+ <div class="container-intro">
+    <div class="container--a">
+      <h1>Get in touch</h1>
+     <p class="ost--one">If you are looking for a Software Tester to help on any project, you can contact me via <a class="gnt contact--mobile" href="https://www.linkedin.com/in/jonconnordublin/" target="_blank">LinkedIn</a>, <a class="gnt contact--mobile" href="mailto:jonconnor@live.ie" target="_blank">email</a> or <a class="gnt contact--mobile" href="https://jonconnorati.github.io/JonConnor/" target="_blank">GitHub</a> and the links on the top right of the page. <br><br>My contact details are also in my <a class="gnt contact--mobile" href="Resources/JonConnorCV.pdf" target="popup" onclick="window.open('Resources/JonConnorCV.pdf'); return false">CV&nbsp;here</a>. <br><br>It&nbsp;would be great to hear from you and find out more about your project.<br><br><br><br><br>
+    </p>
+
+    
+
+  
+    </div>
+  </div>
+ 
+  
+    
+
+  
+
+  <footer>
+    <h3 class="footer">&copy; Jon Connor 2023</h3>
+  </footer>
+</div>
+</div>
+
+
+</body>
+
+</html>
