@@ -564,7 +564,7 @@ img {
 .code {
   flex-direction: column;
   /* display: flex; */
-  width: 80%;
+  width: 100%;
   align-items:center;
   /*justify-content: center;*/
   text-align: left;
@@ -749,27 +749,29 @@ details summary {
   display: block;
   cursor: pointer;
   padding: .5em .5em .5em .7em;
-  background: #ededed;
-  color: #2b2b2b;
+  background: #27afea;
+  color: cornsilk;
   border-radius: 3px 3px 0 0;
 }
 
 details:not([open]) summary:hover,
 details:not([open]) summary:focus {      
-  background: #ffffff;
+  background: #27afea;
   /*color: #454545;*/
 }
 
 details[open] summary {
   border: 1px;
   background: #27afea;
-  color: #ffffff;
+  color: #000000;
 }
 
 details article {
-  margin: 1rem 0 1rem 5rem;
+  margin: 1rem 0 1rem 2rem;
 }
 
 article p {
   font-size: 1rem;
+  text-align: justify;
+  margin: 0 1rem 0 0;
 }
