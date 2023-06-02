@@ -215,7 +215,7 @@ p .gnt:hover {
   margin: 1rem 0 0 0;
 }
 
-.container-intro.odd{
+.container-intro.odd {
   
   
   display: flex;
@@ -226,18 +226,17 @@ p .gnt:hover {
   
 }
 
-.container-intro.even{
+.container-intro.even {
   
   background-color:#27afea;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0 0 0;
-
+  margin: 1rem 0 3rem 0;
   
 }
 
-.container--a{
+.container--a {
   
   flex-direction: column;
   display: flex; 
@@ -247,6 +246,19 @@ p .gnt:hover {
   
 }
 
+.container--b {
+  
+  flex-direction: column;
+  display: flex; 
+  max-width: 80%;
+  align-items:left;
+  /*justify-content: center;*/
+  
+}
+
+
+
+
 .ost--one.odd {
   color: cornsilk;
 }
@@ -255,6 +267,13 @@ p .gnt:hover {
   text-align:justify;
   flex: 1 1 auto;
   margin: 5px 0 5px 0;
+  font-size: 1rem;
+}
+
+ul.ost--one {
+  text-align: left;
+  flex: 1 1 auto;
+  margin: 5px 0 5px 50px;
   font-size: 1rem;
 }
 
