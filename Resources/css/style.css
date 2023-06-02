@@ -64,7 +64,7 @@ p .gnt {
   font-style: italic;
   font-weight: bolder;
   background-color: #595959;
-  border-radius: 50%;
+  border-radius: 5rem;
   padding:0.5rem;
   
  
@@ -133,7 +133,7 @@ p .gnt:hover {
   font-style: italic;
   font-weight: bolder;
   background-color: #27afea;
-  border-radius: 50%;
+  border-radius: 5rem;
   padding:0.5rem;
 }
 
@@ -145,7 +145,7 @@ p .gnt:hover {
   font-style: italic;
   font-weight: bolder;
   background-color: #595959;
-  border-radius: 50%;
+  border-radius: 5rem;
   padding:0.5rem;
 
 }
@@ -232,7 +232,7 @@ p .gnt:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0 3rem 0;
+  margin: 1rem 0 0 0;
   
 }
 
@@ -273,8 +273,10 @@ p .gnt:hover {
 ul.ost--one {
   text-align: left;
   flex: 1 1 auto;
-  margin: 5px 0 5px 50px;
+  margin: 0.5rem 0 0.5rem 5rem;
   font-size: 1rem;
+  line-height: 166%;
+
 }
 
 
@@ -308,8 +310,8 @@ ul.ost--one {
   justify-content: center;
   align-items: stretch;
   margin: 0 auto;
-  max-width: 100%;
-  background-color:#27afea;
+  max-width: 80%;
+  /*background-color:#27afea;*/
   
   
 
@@ -364,7 +366,7 @@ h4 {
   background-color: #595959;
   padding: 1rem;
   margin: 0.6rem;
- 
+  border-radius: 5rem;
   display: flex;
   flex-wrap: wrap;
   max-width: 80%;
@@ -380,6 +382,7 @@ h4 {
   text-align: center;
   font-size: 1.4rem;
   justify-content: center ;
+  
 }
 
 
@@ -680,6 +683,7 @@ img {
   cursor: pointer;
   margin: 1rem;
   text-align: left;
+  border-radius: 5rem;
   
   
 
@@ -719,3 +723,53 @@ img {
   background-color:#27afea;
 }
 
+.New--container {
+  max-width: 80%;
+  margin: 0 auto;
+
+
+}    
+
+details {
+  overflow: hidden;
+  margin-top: 0.125em;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #333333;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+summary {
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+  padding: .5em .5em .5em .7em;
+  background: #ededed;
+  color: #2b2b2b;
+  border-radius: 3px 3px 0 0;
+}
+
+details:not([open]) summary:hover,
+details:not([open]) summary:focus {      
+  background: #ffffff;
+  /*color: #454545;*/
+}
+
+details[open] summary {
+  border: 1px;
+  background: #27afea;
+  color: #ffffff;
+}
+
+details article {
+  margin: 1rem 0 1rem 5rem;
+}
+
+article p {
+  font-size: 1rem;
+}
