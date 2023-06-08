@@ -19,10 +19,14 @@
     <a class="active" href="#start"><p class="mobile">Home</p><i class="fas fa-home"></i></a>
   </div>
     
-  <h2 id="Name">Jon Connor</h2>
+  <div id="Name">
+    <h2>Jon Connor</h2>
+    <h2>Software Tester</h2>
+  </div>
   <div class="navright"> 
     <a href="https://jonconnorati.github.io/JonConnor/" target="_blank" id="list-last"><p class="mobile">GitHub</p><i class="fab fa-github"></i></a>
     <a href="mailto:jonconnor@live.ie" target="_blank"><p class="mobile">Email</p><i class="fas fa-at"></i></a>
+    <a href="JonCV.html"><p class="mobile">CV</p><i class="fa fa-id-card"></i></a>
     <a href="https://www.linkedin.com/in/jonconnordublin/" target="_blank"><p class="mobile">Profile</p><i class="fab fa-linkedin"></i></a>
   </div>
 </div>
@@ -30,80 +34,76 @@
 <div id="start"><p id="about-me">Helper text</p></div>
 <div class="main">
 <!--About me section--> 
-  <div class="container-intro">
+  <div class="container-intro odd">
     <div class="container--a">
-      <h1 class=>About me</h1>
+      <h1>About me</h1>
       <p class="ost--one">I am a software tester and believe the role of a tester is much more than finding bugs. My view is that the tester is an advocate for the end users and should be involved in the Development Lifecycle from the beginning.<br><br>
       For me being part of a team that provides software solutions to its clients and hearing the words, <b><i>"This is exactly what we were looking for"</i></b> is what its all about.<br><br> 
       This web page idea came to me when I read an article on linkedin where the author (apologies for not giving credit, can't find the post now) stated that Information Technology is not <em>WORKING</em> for a living but rather <em>LEARNING</em> for a living.<br><br>
-      So that inspired me to write a web page. I took an online course in flexbox and added a few bits of javascript that I know. At the same time I decided to do an article about Cucumber and Gherkin after doing a course. The reasoning being if you can't explain it you don't understand it.<br><br>
+      So that inspired me to write a web page. I took an online course in flexbox and added a few bits of javascript that I know. At the same time I decided to do an article about Cucumber and Bug reports. The reasoning being if you can't explain it you don't understand it.<br><br>
       I have found this project enjoyable and challenging. The most challenging part has been the content. Somebody once sent me an email, that started with, <q>Sorry this email is so long but I didn't have time to write a short one.</q> I completely get that now.
     </p>
   
     </div>
   </div>
-<!--Video section
-  <div class="container-aboutMe" id="section1">
-    <div class="centervid">
-      <p class="vid--ost"><b>Press <i class="fas fa-play-circle"></i> to watch the video.</b></p>
-        <video class="vid" width="70%" controls>
-          <source src=">
-         </video>
-                
-         
-    </div>
-    
-    
-  </div>-->
-<!--BDD/CUCUMBER/AUTOMATION SECTION-->
-  <div class="container-intro" id="BDD" href="#bdd">
+
+<!--Automation Frameworks-->
+  <div class="container-intro even">
     <div class="container--a">
-      <h1>Behavior Driven Development (BDD)</h1>
-        <p class="ost--one">I'm a big fan of BDD and used it to implement a new module in an existing software package last year. The collaboration between devlopers, testers and the business users by communicating in non technical language to build software is a very powerful tool.<br><br>
-        Result - software was delivered <i><b>faster</b></i> and <i><b>better.</b></i><br><br>
-        Click on the item below to enter the BDD section and find out more about Cucumber, Gherkin and Automation.</p>
+      <h1>Automation Framework Experience</h1>
+      <p class="ost--one odd">Here is a brief summary of the Frameworks I have worked on.<span class="mobile" style="color:#27afea">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+      
+        
+            <ul class="list">   
+            <li><p class="ost--one odd">A localisation project I worked on, we used Selenium/Java to navigate the UI and take screenshots of the pages to give context to translators. The pages were translated we would run the same tests again and SME's would carry out a Linguistic check on the translated pages, and I would check that the translation hadn't broken any functionality.</li></p>
+            <li><p class="ost--one odd">I started using Cucumber when I was on a project that was going round in circles and found it most useful in agreeing on requirements with the business users and the developers. The devlopers didn't understand the business rules and the business didn't know how to give them the requirements. Nothing was getting implemented correctly because the developers had to wade through reams and reams of business literature and identify the key elements. Cucumber enabled me to write short scenarios covering all the rules, that the business could agree on and the devlopers understood.</li></p>
+            <li><p class="ost--one odd">I've been working with Robot Framework for the last 6 months at a company that develops legislative drafting software. I can't recommend this tool highly enough. It can be used for Browser UI, API and Desktop Applications and lots more. Its based on Python and the syntax is very simple. The librarys imported contain keywords (functions) and you create your own keywords using plain english consisting of the pre built functions. Like cucumber the tests are readable by anybody with or without technical knowledge.</li></p>
+          </ul>
+
+        <br><br>
+
+        <p class="ost--one odd">For anybody who's interested in learning more about Automation, or would like to play around with the frameworks, I have created three repositorys in GitHub that carry out the same tests on the same website. Please feel free to clone a copy and play around.<br><br>Click on an item below to see the repository on GitHub.</p>
+        <div class="container">
+          <div class="left">
+            <h2>Test NG Framework</h2>
+            <h4>This framework tests a Donut retailers website, using Java, Selenium and Test NG.</h4>
+              <div class="left--text">
+                <p><a class="gnt" href="https://github.com/JonConnorATI/donutsPageObjectModel" target="_blank">Selenium-Java</p></a>
+              </div>
+          </div>    
+          <div class="center">
+            <h2>Cucumber Framework</h2>
+            <h4>This framework tests the same Donut retailers website, using Java, Selenium and Cucumber.</h4>
+              <div class="center--text">
+                <p><a class="gnt"href="https://github.com/JonConnorATI/Donuts" target="_blank">Cucumber</a></p>
+              </div>
+          </div>
+          <div class="right">
+            <h2>Robot Framework</h2>
+            <h4>This framework tests the same Donut retailers website, using Robot Framework.</h4>
+              <div class="right--text">
+                <p><a class="gnt" href="https://github.com/JonConnorATI/RobotDonuts" target="_blank">Robot</a></p>
+              </div>
+          </div>
+        </div> 
+        <p class="ost--one odd">Please feel free to explore the repositorys and compare the tests and see how each framework operates.<br><br></p>         
     </div>
   </div>
   
-  <!--<div class="container">
 
-    <div class="left" id="bdd"> 
-      <div class="box">
-        <a href="bdd.html" class="imgTitle">BDD</a>
-        <img class="bdd" src="Resources/images/BDD.png" alt="BDD Diagram">
-      </div>
-    </div>
+  
 
-    <div class="center" id="cucumber">
-      <div class="box"><a href="cucumber.html" class="imgTitle">Cucumber</a>
-        <img class="cucumber" src="Resources/images/Cucumber.PNG" alt="Cucumber Diagram">
-      </div>  
-    </div>
 
-    <div class="right" id="automation">
-      <div class="box"><a href="automation.html" class="imgTitle">Automation</a>
-        <img class="automation" src="Resources/images/Automation.png" alt="Automation Diagram">
-      </div>
-    </div>
-
-  </div>-->
-
-  <div class="item--container">
-    <div class="item">
-      <a href="bdd.html"><img class ="bddimage" src="Resources/images/BDD2.png" alt="BDD GRAPHIC" ></a>
-      
-    </div>
-  </div>
    <!--Further info-->
-  <div class="container-intro">
+  <div class="container-intro odd">
     <div class="container--a">
       <h1>The 7 Principles of Software Testing</h1>
-        <p class="ost--one">These 7 principles were the first things I ever learnt about Software Testing. I always refer to them when I am starting a new project, and when issues arise to check I am on the right path.<br>
-        <br>Below are the principles,<em> hover on each one, </em>I have included a brief description of what they mean to me.
+        <p class="ost--one">These 7 principles were the first things I ever learnt about Software Testing. I always refer to them when I am starting a new project, and when issues arise to check I am on the right path.<span class="mobile" style="color:	#FFFFFF">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+        <br><br>Below are the principles,<em> hover on each one, </em>I have included a brief description of what they mean to me.<span class="mobile" style="color:	#FFFFFF">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
         </p>
-    </div>
-  </div>
-    <div class="container">
+    
+  
+    <!--<div class="container contents-seven">-->
       <div class="contents-seven">
         <div class="dropdown"><button class="dropbtn">Testing shows the presence of defects, not their absence</button>
         <div class="dropdown-content"><a>Testing reduces the probability of undiscovered defects but even if no defects are found, it is not proof of correctness</a></div>
@@ -128,18 +128,20 @@
         <div class="dropdown"><button class="dropbtn">Early testing saves time and money</button>
           <div class="dropdown-content"><a>Testing should start as early as possible in development, so defects are captured in the early stages. It is much cheaper to fix a defect early in the development.</a></div>
         </div>
-      </div>
+      </div>  
+     </div> 
     </div>
-
+  </div>
+</div>
     
   
   <!--My skills section-->
-  <div class="container-intro">
+  <div class="container-intro even">
     <div class="container--a">
       <h1>My skills</h1>
-        <p class="ost--one">Below are the skills I have attained over the years and that I think are important and helpful in a project</p>
-    </div>
-  </div>
+        <p class="ost--one odd">Below are the skills I have attained over the years and that I think are important and helpful in a project.<span class="mobile" style="color:#27afea">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span></p>
+    
+  
   <div class="container">
     <div class="left">
       <h2>Technical</h2>
@@ -153,6 +155,7 @@
       <p>Selenium</p>
       <p>Cucumber</p>
       <p>Gherkin</p>
+      <p>Robot Framework</p>
       <p>Git</p>
       <p>Jira</p>
     </div>
@@ -170,7 +173,6 @@
         <p>Planning</p>
         <p>Estimation</p>
         <p>Requirements</p>
-        <p>Psuedo Code</p>
         <p>Black Box</p>
         <p>Exploratory</p>
         <p>Test Plans</p>
@@ -186,18 +188,43 @@
         <p>Adaptable</p>
         <p>Advocate for users</p>
         <p>Organised</p>
-        <p>Understand</p>
         <p>Positive</p>
-        <p>Empathy</p>
+        <p>Learning</p>
        </div>
         
     </div>
   </div>
+  </div>
+</div>
+<!--BDD/CUCUMBER/AUTOMATION SECTION-->
+<div class="container-intro odd" id="bdd" href="#bdd">
+  <div class="container--a">
+    <h1>Other Content I've created</h1>
+      <p class="ost--one">Behaviour Driven Development (BDD) is widely used to devolop software. I used it to implement a new module in an existing software package just before Covid. The collaboration between devlopers, testers and the business users by communicating in non technical language to build software is a very powerful tool.<br><br>My understanding of <a class="gnt" href="bdd.html">BDD</a>.</p><br><br>
 
-  <div class="container-intro">
+      <p class="ost--one">At a lot of the interviews I've been in, I'm asked what makes a good bug report. The information required can be taken for granted, especially when using Jira or similiar tools, because it tags or prefils information automatically. I wrote this a refresher to remind me, especially when moving to a different team or project.<br><br>Check out what makes a good <a class="gnt" href="bugreport.html">Bug&nbsp;Report</a>.</p>
+      
+  </div>
+</div>
+<!--<div class="item--container">
+  <div class="item">
+    <a href="bdd.html"><img class ="bddimage" src="Resources/images/BDD2.png" alt="BDD GRAPHIC" ></a>
+    
+  </div>
+</div>-->
+
+
+  <div class="container-intro even">
     <div class="container--a">
       <h1 class=>Get in touch</h1>
-      <p class="ost--one">If you are looking for a Software Tester to help on any project, you can contact me via the email, LinkedIn or GitHub links on the top right of the page. It would be great to hear from you and find out more about your project and for you to find out more about me.<br><br>My contact details are also in my <a id="reportcv" href="Resources/JonConnorCV.pdf" target="popup" onclick="window.open('Resources/JonConnorCV.pdf'); return false">CV&nbsp;here</a>
+
+    <p class="ost--one odd">If you are looking for a Software Tester to help on any project, you can contact me via:<span class="mobile" style="color:#27afea">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+      <br>
+      <br>
+      <a class="gnt contact--mobile" href="https://www.linkedin.com/in/jonconnordublin/" target="_blank">LinkedIn</a><span class="mobile" style="color:#27afea">---</span>
+      <a class="gnt contact--mobile" href="mailto:jonconnor@live.ie" target="_blank">email</a><span class="mobile" style="color:#27afea">---</span>
+      <a class="gnt contact--mobile" href="https://jonconnorati.github.io/JonConnor/" target="_blank">GitHub</a><br><br>
+      <br><br>My contact details are also in my <a id="cvbutton" class="gnt contact--mobile" href="JonCV.html">CV&nbsp;here</a>. It&nbsp;would be great to hear from you and find out more about your project.<br><br><br>
     </p>
   
     </div>
@@ -209,7 +236,7 @@
   
 
   <footer>
-    <h3 class="footer">&copy; Jon Connor 2021</h3>
+    <h3 class="footer">&copy; Jon Connor 2023</h3>
   </footer>
 </div>
 </div>

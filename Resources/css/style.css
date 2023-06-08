@@ -20,7 +20,7 @@ body {
   
 } */
 
-#about-me {
+.container-intro.even h1, .container-intro.even h2 {
   color:cornsilk;
 }
 
@@ -53,6 +53,47 @@ h1 {
   color:cornsilk;
   text-align: center;
  
+}
+
+/*Get in touch links*/
+
+p .gnt {
+  text-decoration: none;
+  color:cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #595959;
+  border-radius: 5rem;
+  padding:0.5rem;
+  
+ 
+}
+
+@media only screen and (max-width: 520px) {
+  p .gnt.contact--mobile, p #cvbutton {
+  text-decoration: none;
+  color:cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #595959;
+  border-radius: 0;
+  padding: 0;
+
+  }
+
+  p .gnt.contact--mobile:hover, p #cvbutton:hover {
+    background-color:rgb(14, 131, 167);
+    padding: 0.2rem;
+  }
+
+
+}
+
+p .gnt:hover {
+  background-color:rgb(14, 131, 167);
+  padding: 1rem;
 }
 
 /* Navbar left */
@@ -92,9 +133,29 @@ h1 {
   font-style: italic;
   font-weight: bolder;
   background-color: #27afea;
-  border-radius: 50%;
+  border-radius: 5rem;
   padding:0.5rem;
 }
+
+#cvbutton {
+
+  text-decoration: none;
+  color: cornsilk;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: #595959;
+  border-radius: 5rem;
+  padding:0.5rem;
+
+}
+
+#cvbutton:hover {
+  background-color:rgb(14, 131, 167);
+  padding: 1rem;
+}
+
+
 
 #reportcv {
   text-decoration: none;
@@ -129,6 +190,8 @@ h1 {
   }
 }
 
+
+
 #Name {
   
   position:absolute; 
@@ -147,44 +210,83 @@ h1 {
 
 #BDD {
   
-  background-color: #27afea;
-  color: cornsilk;
+  /*background-color: #27afea;*/
+  /*color: cornsilk;*/
   margin: 1rem 0 0 0;
 }
 
-.container-intro {
+.container-intro.odd {
   
   
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem 0 3rem 0;
+
   
 }
 
-.container--a{
+.container-intro.even {
+  
+  background-color:#27afea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 0 0;
+  
+}
+
+.container--a {
   
   flex-direction: column;
-  /* display: flex; */
+  display: flex; 
   max-width: 80%;
-  align-items: center;
+  align-items:center;
   /*justify-content: center;*/
   
 }
 
+.container--b {
+  
+  flex-direction: column;
+  display: flex; 
+  max-width: 80%;
+  align-items:left;
+  /*justify-content: center;*/
+  
+}
+
+
+
+
+.ost--one.odd {
+  color: cornsilk;
+}
+
 .ost--one, .ost--two {
-  text-align: justify;
+  text-align:justify;
   flex: 1 1 auto;
   margin: 5px 0 5px 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
+
+ul.ost--one {
+  text-align: left;
+  flex: 1 1 auto;
+  margin: 0.5rem 0 0.5rem 5rem;
+  font-size: 1rem;
+  line-height: 166%;
+
+}
+
+
 
 
 .container-aboutMe {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color:black;
   /*background-color: #27afea;*/
   padding: 2rem;
@@ -208,8 +310,8 @@ h1 {
   justify-content: center;
   align-items: stretch;
   margin: 0 auto;
-  max-width: 100%;
-  background-color:#27afea;
+  max-width: 80%;
+  /*background-color:#27afea;*/
   
   
 
@@ -232,8 +334,8 @@ h1 {
   flex-direction: column;
   display: flex;
   padding: 3rem 0.5rem;
-  /*background-color: #595959;*/
-  margin: 2rem 0.5rem;
+  background-color: #27afea;
+  /*margin: 2rem 0.5rem;*/
   align-items: center;
   flex-wrap: wrap;
   color: cornsilk;
@@ -246,8 +348,15 @@ h1 {
   font-size: 1.8rem;
   margin-bottom: 0.8rem;
   display: flex;
-  align-items: flex-start;
+  
+  color: cornsilk;
      
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 0.4rem;
 }
 
 
@@ -255,9 +364,9 @@ h1 {
 .left p, .center p, .right p {
   color: cornsilk;
   background-color: #595959;
-  padding: 0.5rem;
-  margin: 0.2rem;
-  border-radius: 30%;
+  padding: 1rem;
+  margin: 0.6rem;
+  border-radius: 5rem;
   display: flex;
   flex-wrap: wrap;
   max-width: 80%;
@@ -270,7 +379,10 @@ h1 {
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   font-size: 1.4rem;
+  justify-content: center ;
+  
 }
 
 
@@ -373,6 +485,20 @@ footer {
 
 }
 
+.list {
+  list-style-type: disc;
+  font-size: 1.3rem;
+  color: cornsilk;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 85%;
+}
+
+.list li {
+  margin: 0.8rem;
+}
+
 .imgCenter {
   display: block;
   margin-left: auto;
@@ -438,7 +564,7 @@ img {
 .code {
   flex-direction: column;
   /* display: flex; */
-  width: 80%;
+  width: 100%;
   align-items:center;
   /*justify-content: center;*/
   text-align: left;
@@ -498,8 +624,8 @@ img {
 
 .item--container {
   display: flex;
-  height: 30rem;
-  background-color: #27afea;
+  height: 20rem;
+  /*background-color: #27afea;*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -508,8 +634,8 @@ img {
 .item {
   display: flex;
   border: 0.4rem solid #27afea;
-  height: 22rem;
-  width: 22rem;
+  height: 15rem;
+  width: 15rem;
   align-items: center;
   justify-content: center;
   
@@ -546,6 +672,7 @@ img {
 }
 
 
+
 .dropbtn {
   display: flex;
   background-color: #595959;
@@ -556,6 +683,8 @@ img {
   cursor: pointer;
   margin: 1rem;
   text-align: left;
+  border-radius: 5rem;
+  
   
 
 }
@@ -569,7 +698,7 @@ img {
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f9f9f9;
+  background-color: #27afea;
   max-width: 18rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -577,20 +706,72 @@ img {
 }
 
 .dropdown-content a {
-  color: black;
+  color: cornsilk;
   margin: 0.5rem;
   padding: 0.6rem;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+/*.dropdown-content a:hover {background-color: #f1f1f1;}*/
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color:rgb(14, 131, 167);
+  background-color:#27afea;
 }
 
+.New--container {
+  max-width: 80%;
+  margin: 0 auto;
+
+
+}    
+
+details {
+  overflow: hidden;
+  margin-top: 0.125em;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #333333;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+summary {
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+  padding: .5em .5em .5em .7em;
+  background: #27afea;
+  color: cornsilk;
+  border-radius: 3px 3px 0 0;
+}
+
+details:not([open]) summary:hover,
+details:not([open]) summary:focus {      
+  background: #27afea;
+  /*color: #454545;*/
+}
+
+details[open] summary {
+  border: 1px;
+  background: #27afea;
+  color: #000000;
+}
+
+details article {
+  margin: 1rem 0 1rem 2rem;
+}
+
+article p {
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0 1rem 0 0;
+}
