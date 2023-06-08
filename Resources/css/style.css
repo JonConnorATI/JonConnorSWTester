@@ -69,6 +69,9 @@ p .gnt {
   
  
 }
+#special_button {
+  line-height: 200%;
+}
 
 @media only screen and (max-width: 520px) {
   p .gnt.contact--mobile, p #cvbutton {
@@ -78,8 +81,8 @@ p .gnt {
   font-style: italic;
   font-weight: bolder;
   background-color: #595959;
-  border-radius: 0;
-  padding: 0;
+  border-radius: 3rem;
+  padding: 0.5rem;
 
   }
 
@@ -364,13 +367,13 @@ h4 {
 .left p, .center p, .right p {
   color: cornsilk;
   background-color: #595959;
-  padding: 1rem;
-  margin: 0.6rem;
+  padding: 1.3rem;
+  margin: 1rem;
   border-radius: 5rem;
   display: flex;
   flex-wrap: wrap;
-  max-width: 80%;
-
+  max-width: 90%;
+  justify-content: center;
   
   
 }
@@ -677,12 +680,12 @@ img {
   display: flex;
   background-color: #595959;
   color: white;
-  padding: 0.5rem;
+  padding: 1.5rem;
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
   margin: 1rem;
-  text-align: left;
+  /*text-align: left;*/
   border-radius: 5rem;
   
   
