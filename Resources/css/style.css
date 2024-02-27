@@ -779,8 +779,6 @@ article p {
   margin: 0 1rem 0 0;
 }
 
-article ul li p {
-  font-size: 2rem;
-  text-align: justify;
-  margin: 0 1rem 0 0;
+article li {
+  margin: 1rem; 
 }
